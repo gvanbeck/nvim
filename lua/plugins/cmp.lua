@@ -1,4 +1,4 @@
-local types = require("cmp.types")
+local _, types = pcall(require, "cmp.types")
 
 local _, tabnine = pcall(require, "cmp_tabnine.config")
 
