@@ -247,6 +247,13 @@ local function attach_nvim_tree(bufnr)
   })
 end
 
+local function attach_php(bufnr)
+  wk.add({
+    { buffer = bufnr },
+    { "<leader>rp", "<cmd>PhpactorContextMenu<CR>", desc = "PhpActor Context Menu" },
+  })
+end
+
 return {
   attach_markdown = attach_markdown,
   attach_typescript = attach_typescript,
@@ -255,4 +262,5 @@ return {
   attach_jest = attach_jest,
   attach_spectre = attach_spectre,
   attach_nvim_tree = attach_nvim_tree,
+  attach_php = attach_php,
 }

@@ -142,7 +142,7 @@ require("mason-lspconfig").setup_handlers {
       on_attach = require("config.lsp.servers.vuels").on_attach,
       settings = require("config.lsp.servers.vuels").settings,
     })
-  end
+  end,
 }
 
 require("ufo").setup({
